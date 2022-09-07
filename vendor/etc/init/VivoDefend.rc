@@ -1,0 +1,31 @@
+on post-fs
+    setprop ro.vendor.defend.oem.name ${ro.vivo.oem.name}
+    setprop ro.vendor.defend.vgc.cust.name ${ro.vgc.cust.name}
+    setprop ro.vendor.defend.hardware.version ${ro.vivo.hardware.version}
+    setprop ro.vendor.defend.build.version.group ${ro.build.version.group}
+    setprop ro.vendor.defend.gmsversion ${ro.com.google.gmsversion}
+    setprop ro.vendor.defend.system.brand ${ro.product.system.brand}
+    setprop ro.vendor.defend.dyn.support ${ro.vivo.dyn.support}
+    setprop ro.vendor.defend.anti.version ${ro.boot.anti.sec_nonsec_reco}
+    setprop ro.vendor.defend.anti.avb_version ${ro.boot.anti.avb_anti_ver}
+
+service vivo_defend /vendor/bin/vivo_defend
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service defend_gka /vendor/bin/vivo_defend  gka
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+on boot
+    start vivo_defend
+
+on property:sys.user.0.ce_available=true
+    setprop vendor.property.ce_available ${sys.user.0.ce_available}
+    start defend_gka

@@ -1,0 +1,11 @@
+{
+  "config": {
+    "hw_platform": ["QRD"],
+    "soc_id": ["394"]
+  },
+  "sns_shut_mdc": {
+    "owner": "sns_shut_mdc",
+    "enable": {"ver": "0","type": "int","data": "0"
+    }
+  }
+}
