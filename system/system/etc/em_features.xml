@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<boolean name="gyroscope_support">true</boolean>
+	<boolean name="hifi_support">false</boolean>
+	<boolean name="fm_support">true</boolean>
+	<boolean name="sub_echo_support">true</boolean>
+	<boolean name="smart_spearker_amplifier_cali_support">true</boolean>
+	<boolean name="speaker_resdetect_support">true</boolean>
+	<boolean name="ktv_sound_support">false</boolean>
+	<boolean name="camera_pdaf">true</boolean>
+	<boolean name="virtual_sim">false</boolean>
+	<boolean name="flash_light_cali_support">true</boolean>
+	<boolean name="meid_support">true</boolean>
+	<boolean name="button_light">false</boolean>
+	<boolean name="dpdt_test">true</boolean>
+	<boolean name="leds_support">false</boolean>
+	<boolean name="fastcharger_support">true</boolean>
+	<boolean name="ai_key_support">false</boolean>
+	<boolean name="reduce_sar_test">true</boolean>
+	<boolean name="infrared_near_support">true</boolean>
+	<boolean name="light_sensor_angle">true</boolean>
+	<boolean name="light_sensor_leak">true</boolean>
+	<string name="btb_slot">TF,SIM1,SIM2</string>
+	<boolean name="tf_hotplug">true</boolean>
+	<string name="camera_type">back[Master,Wide,Macro]front[Master]</string>
+</resources>

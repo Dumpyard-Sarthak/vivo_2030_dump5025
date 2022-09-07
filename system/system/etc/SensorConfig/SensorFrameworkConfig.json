@@ -1,0 +1,17 @@
+{
+    "SupportDoubleScreen": 0,
+    "UnderDisplayLight": 0,
+    "is_underproximitysensor": 0,
+    "DualOrIncProx": 1,
+    "InstantCali": 1,
+    "DriverProxTempCali": 1,
+    "ScreenOnProxTempCali": 1,
+    "SupportLuxAngle": 1,
+    "SmartProx": 0,
+    "MaxBrightness": 4095,
+    "ScreenOnWaitLux": 300,
+    "UnderLightSupportHardwareBrightnessDelta": 1,
+    "MultilevelBright": 1,
+    "NotifyLcmBrightnessToDriverList": 1,
+    "BoostBrightness": 1146
+}
